@@ -1,0 +1,3 @@
+export const API=process.env.NEXT_PUBLIC_API_URL||"http://localhost:5000";
+export function token(){return typeof window==="undefined"?null:localStorage.getItem("token")}
+export async function api(path:string,options:RequestInit={}){const headers=new Headers(options.headers);headers.set("Content-Type","application/json");const t=token();if(t)headers.set("Authorization",`Bearer ${t}`);const r=await fetch(`${API}${path}`,{...options,headers});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.error||"Request failed");return data}

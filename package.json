@@ -1,7 +1,26 @@
 {
-  "name":"internship3-server",
-  "private":true,
-  "scripts":{"dev":"tsx watch src/index.ts","build":"tsc","start":"node dist/index.js"},
-  "dependencies":{"@prisma/client":"^6.0.0","bcryptjs":"^2.4.3","cors":"^2.8.5","dotenv":"^16.4.5","express":"^4.21.2","express-rate-limit":"^7.4.1","jsonwebtoken":"^9.0.2","pdfkit":"^0.15.0","zod":"^3.23.8"},
-  "devDependencies":{"@types/bcryptjs":"^2.4.6","@types/cors":"^2.8.17","@types/express":"^5.0.0","@types/jsonwebtoken":"^9.0.7","@types/node":"^22.10.2","@types/pdfkit":"^0.13.8","prisma":"^6.0.0","tsx":"^4.19.2","typescript":"^5.7.2"}
+  "name": "internship3-client",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.20",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  }
 }
